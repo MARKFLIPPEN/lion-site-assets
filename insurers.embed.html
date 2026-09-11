@@ -1,0 +1,231 @@
+<style>
+    /* Page-specific layout only; everything else comes from base.css */
+    .hero--copy-only { padding-bottom: 80px; }
+    .hero--copy-only .hero__copy { max-width: 760px; }
+    .hero--copy-only .fine { color: var(--on-dark); }
+    .proof { padding-top: 48px; padding-bottom: 48px; }
+    .two-col--chart { grid-template-columns: 1fr 360px; }
+    .two-col--chart .h2 { max-width: 640px; }
+    .chart-col { display: flex; flex-direction: column; gap: 16px; padding-top: 8px; }
+    .h2--sm { font-size: 34px; }
+    .def-list--pad { padding-top: 8px; }
+    .stat--example { font-size: 44px; }
+    .section--blue .eyebrow,
+    .section--blue .sub { color: var(--ink); }
+    .section--blue .wrap { z-index: 1; }
+    .intro-copy { max-width: 864px; display: flex; flex-direction: column; gap: 20px; }
+    .intro-copy .btn { align-self: flex-start; }
+    .intro-copy .small,
+    .intro-copy .small--link { color: var(--ink); }
+    .small--link { font-size: 14px; line-height: 1.45; font-weight: 500; }
+    .small--link a { text-decoration: underline; text-underline-offset: 3px; }
+    .small--link a:hover { opacity: .7; }
+    @media (max-width: 1100px) {
+      .two-col--chart { grid-template-columns: 1fr 320px; }
+    }
+    @media (max-width: 820px) {
+      .hero--copy-only { padding-bottom: 56px; }
+      .proof { padding-top: 40px; padding-bottom: 40px; }
+      .two-col--chart { grid-template-columns: 1fr; gap: 40px; }
+      .h2--sm { font-size: 26px; }
+      .stat--example { font-size: 40px; }
+      .watermark-lion { height: auto; width: 70%; top: auto; bottom: -6%; right: -18%; }
+    }
+  </style>
+<nav class="nav" aria-label="Primary">
+  <a class="nav__logo" href="/" aria-label="LION Specialty home"><img src="https://cdn.prod.website-files.com/688a33497a18e85e8335ca66/6a9f4fc252b3733903194063_logo-left-fullcolor.svg" alt="LION Specialty" width="128" height="40"></a>
+  <div class="nav__links" id="nav-menu">
+    <a class="nav__link" href="/insurers" aria-current="page">Insurers</a>
+    <a class="nav__link" href="/mgas">MGAs</a>
+    <a class="nav__link" href="/insurtechs">Insurtechs</a>
+    <a class="nav__link" href="/why-lion">Why LION</a>
+    <a class="nav__link" href="/boardroom-brief">Boardroom Brief</a>
+  </div>
+  <div class="nav__right">
+    <a class="btn" href="https://calendly.com/leothelion/consultation" target="_blank" rel="noopener">Book a Free Assessment</a>
+    <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-menu">Menu</button>
+  </div>
+</nav>
+
+
+  <!-- 01 Hero -->
+  <section class="hero hero--copy-only" id="hero">
+    <div class="wrap">
+      <div class="hero__copy">
+        <p class="kicker">Insurance brokerage for regional &amp; mutual insurers</p>
+        <h1 class="h1">Your Own Insurance Should Reflect the Underwriting and Claims Work You Do</h1>
+        <p class="sub">Send one issued policy ahead, your D&amp;O or your E&amp;O, declarations and endorsements included. In one free hour, we examine that policy's wording and discuss the other points of our annual 8-Point Stress Test from what you tell us about your program. You keep the findings and a fix list for the policy you send, whether or not you appoint LION.</p>
+        <ul class="checks checks--tight">
+          <li class="check">Strengths in the policy you send</li>
+          <li class="check">Any wording gaps identified in that policy</li>
+          <li class="check">A fix list for that policy, which you keep</li>
+        </ul>
+        <div><a class="btn btn--light" href="https://calendly.com/leothelion/consultation" target="_blank" rel="noopener">Book a Free Assessment</a></div>
+        <p class="fine">One hour. No obligation. Confidential. Your current broker is not contacted. You keep the findings.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 02 Proof Strip -->
+  <section class="section proof" aria-label="Proof points">
+    <div class="wrap">
+      <div class="four-col">
+        <div class="card card--stat">
+          <p class="stat">$250M+</p>
+          <p class="small">recovered in financial institution claims LION has handled</p>
+        </div>
+        <div class="card card--stat">
+          <p class="stat">8 to 12</p>
+          <p class="small">material gaps found in a typical program LION reviews</p>
+        </div>
+        <div class="card card--stat">
+          <p class="stat">20+ years</p>
+          <p class="small">of founder experience placing financial institution coverage</p>
+        </div>
+        <div class="card card--stat">
+          <p class="stat">1 policy</p>
+          <p class="small">is all you send to begin the free assessment</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03 Before a claim -->
+  <section class="section" id="before-a-claim">
+    <div class="wrap">
+      <div class="two-col two-col--chart">
+        <div class="stack">
+          <p class="kicker">Before a claim tests your coverage</p>
+          <h2 class="h2 h2--lg">Your own policy can leave underwriting and claims responsibilities unclear</h2>
+          <ul class="checks checks--tight">
+            <li class="check">Does your professional-services wording describe the underwriting and claims work you perform?</li>
+            <li class="check">Can you explain the limits and retentions you recommend to your board?</li>
+            <li class="check">Have you examined how corporate coverage and reinsurance obligations fit together?</li>
+          </ul>
+          <p class="body body--grey">A familiar policy can leave important activities or obligations open to interpretation, and late renewal terms leave less time to resolve them. We compare the policy you send with the activities you describe.</p>
+        </div>
+        <div class="chart-col">
+          <p class="eyebrow eyebrow--sm">THE 8-POINT STRESS TEST</p>
+          <img loading="lazy" decoding="async" src="https://cdn.prod.website-files.com/688a33497a18e85e8335ca66/6a9f4fc12ef5173f9fe37507_chart-thermometer.svg" alt="The 8-Point Stress Test, point 03 Coverage efficacy highlighted: your assessment starts here" width="360" height="472">
+          <p class="fine">Eight questions, every client program, every year. The policy you send is read at the highlighted point; the rest are discussed from what you tell us.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 04 Professional Liability -->
+  <section class="section section--band" id="professional-liability">
+    <div class="wrap">
+      <div class="two-col two-col--7-5">
+        <div class="stack stack--sm">
+          <p class="kicker">Professional liability</p>
+          <h2 class="h2 h2--sm">Check that your policy describes the insurance work you perform</h2>
+          <p class="body body--grey">If you send your E&amp;O policy, we examine these provisions where they appear. Underwriting and claims handling have to be read against your professional-services definition; the policy's name alone does not answer that question. We connect the activities you describe, and the allegations that reach carriers like yours, to the provisions that would respond, and mark the wording that needs negotiating.</p>
+        </div>
+        <ul class="def-list def-list--pad" aria-label="What we check in your policy">
+          <li class="def-list__head" role="presentation">WHAT WE CHECK IN YOUR POLICY</li>
+          <li class="def-list__item">Professional-services definition against underwriting and claims handling</li>
+          <li class="def-list__item">ECO/XPL provisions in the submitted policy, and the questions to take back to your reinsurance review</li>
+          <li class="def-list__item">Claims-handling and bad-faith allegations against exclusions and carve-backs</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 05 Executive Decisions -->
+  <section class="section" id="executive-decisions">
+    <div class="wrap">
+      <div class="two-col two-col--7-5">
+        <div class="stack stack--sm">
+          <p class="kicker">Executive decisions</p>
+          <h2 class="h2 h2--sm">Explain the protection behind your board's own D&amp;O</h2>
+          <p class="body body--grey">If you send your D&amp;O policy, we examine these provisions where they appear. A regulated risk-bearing entity and its directors can have different interests the day a claim develops. A state examination, a reserving dispute after an acquisition, a shareholder or policyholder action are the kinds of events we discuss. We read Side A, severability, allocation, and the claim definition for the moment the institution's interests and yours diverge.</p>
+        </div>
+        <ul class="def-list def-list--pad" aria-label="What we check in your policy">
+          <li class="def-list__head" role="presentation">WHAT WE CHECK IN YOUR POLICY</li>
+          <li class="def-list__item">Side A wording, and whether its limit is shared or dedicated</li>
+          <li class="def-list__item">How conduct exclusions apply to different insureds, including severability and adjudication wording</li>
+          <li class="def-list__item">Whether the claim definition includes the examination or proceeding you are concerned about, and which response costs it addresses</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 06 Example -->
+  <section class="section section--band" id="example">
+    <div class="wrap">
+      <div class="two-col two-col--7-5">
+        <div class="stack stack--sm">
+          <p class="kicker">Anonymized placement example</p>
+          <h2 class="h2 h2--sm">A closer review changed the renewal</h2>
+          <p class="body body--grey">A mutual insurer let its most trusted producer handle its own corporate D&amp;O and E&amp;O. The relationship felt efficient. The review found more than a dozen material gaps across fraud exclusions, allocation language, and notice provisions. The institution moved its full program on the strength of that review. This example involved a broader engagement; your free assessment covers the policy you send.</p>
+        </div>
+        <div class="card card--stat">
+          <p class="stat stat--example">More than a dozen</p>
+          <p class="small" style="font-size:15px">material gaps found in the review</p>
+          <p class="small">The lesson for your institution: read the wording and the structure together, even when the existing relationship feels comfortable.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 07 What to send -->
+  <section class="section" id="what-to-send">
+    <div class="wrap">
+      <div class="two-col two-col--7-5">
+        <div class="stack stack--sm">
+          <p class="kicker">One policy, one hour</p>
+          <h2 class="h2 h2--sm">What to send</h2>
+          <p class="body body--grey">Send one issued D&amp;O or E&amp;O policy, declarations and endorsements included. If both coverages are written in one issued policy, send that complete policy. That is the whole preparation.</p>
+          <p class="body body--grey">Within the 8-Point Stress Test, the policy is read through five questions. The remaining points are discussed from what you tell us about the program.</p>
+        </div>
+        <ul class="def-list def-list--pad" aria-label="The five questions">
+          <li class="def-list__head" role="presentation">THE FIVE QUESTIONS</li>
+          <li class="def-list__item"><strong>Who is insured?</strong><span>Which people, entities, and activities the wording includes.</span></li>
+          <li class="def-list__item"><strong>When does coverage attach?</strong><span>The trigger, reporting requirements, and timing provisions.</span></li>
+          <li class="def-list__item"><strong>Who controls the defense?</strong><span>Counsel selection, consent, settlement authority, and conditions.</span></li>
+          <li class="def-list__item"><strong>What does the form take away?</strong><span>Exclusions, restrictions, and any exceptions that give coverage back.</span></li>
+          <li class="def-list__item"><strong>How much is actually available?</strong><span>Limits, sublimits, retentions, and what erodes them.</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 08 Your First Conversation -->
+  <section class="section section--blue" id="introduction">
+    <img loading="lazy" decoding="async" class="watermark-lion" src="https://cdn.prod.website-files.com/688a33497a18e85e8335ca66/6a9f4fc2ec33534c6b8b2bd9_watermark-lion-white.svg" alt="" aria-hidden="true">
+    <div class="wrap">
+      <div class="intro-copy">
+        <p class="kicker">Prefer an introduction first?</p>
+        <h2 class="h2 h2--lg">Discuss the risks your own insurance needs to address.</h2>
+        <p class="sub">Choose the introduction if you want to discuss fit before sending a policy. Spend 15 minutes with Mark Flippen discussing your priorities and whether LION's approach fits your institution.</p>
+        <a class="btn" href="https://calendly.com/leothelion/markflippen" target="_blank" rel="noopener">Discuss your insurance program</a>
+        <p class="small">No policy required. The introduction does not include policy findings or a fix list.</p>
+        <p class="small--link">Ready to send a policy? <a href="https://calendly.com/leothelion/consultation" target="_blank" rel="noopener">Book a Free Assessment</a>. Send one issued policy ahead; in one hour you receive findings and a fix list for that policy.</p>
+      </div>
+    </div>
+  </section>
+
+
+<!-- FOOTER: paste immediately before </body>, before the script tag. -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__top">
+      <div class="footer__col">
+        <img src="https://cdn.prod.website-files.com/688a33497a18e85e8335ca66/6a9f4fc24c281763e00e0837_logo-left-inverted.svg" alt="LION Specialty" width="154" height="48">
+        <p class="footer__blurb">Specialist insurance brokerage for financial institutions. Regional and mutual insurers, MGAs, insurtechs.</p>
+      </div>
+      <div class="footer__links">
+        <a href="/">Home</a>
+        <a href="/insurers">Regional &amp; Mutual Insurers</a>
+        <a href="/mgas">MGAs</a>
+        <a href="/insurtechs">Insurtechs</a>
+        <a href="/why-lion">Why LION</a>
+        <a href="/boardroom-brief">Boardroom Brief</a>
+        <a href="mailto:flippen@lionspecialty.com">Contact</a>
+      </div>
+    </div>
+    <div class="footer__rule"></div>
+    <p class="footer__copy">&#169; 2026 LION Specialty</p>
+  </div>
+</footer>
