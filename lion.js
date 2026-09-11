@@ -1,3 +1,4 @@
+
 (function () {
   var el = document.querySelector('[data-cycle]');
   if (el) {
@@ -12,10 +13,10 @@
         i = (i + 1) % words.length;
         word.textContent = words[i];
         word.classList.remove('is-out');
-      }, 200);
+      }, 400);
     }
     if (!reduce && words.length > 1) {
-      timer = setInterval(next, 4000);
+      timer = setInterval(next, 2400);
       el.addEventListener('mouseenter', function () { paused = true; });
       el.addEventListener('mouseleave', function () { paused = false; });
       el.addEventListener('focusin', function () { paused = true; });
